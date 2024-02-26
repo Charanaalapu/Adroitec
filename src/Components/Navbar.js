@@ -1,34 +1,3 @@
-// import React from 'react'
-
-// const Navbar = () => {
-//   return (
-//     <>
-//     <nav className="navbar navbar-expand-lg" style={{backgroundColor:"#202833",opacity:"1",color:"white"}}>
-//   <a className="navbar-brand" href="#">Navbar</a>
-//   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-//     <span className="navbar-toggler-icon"></span>
-//   </button>
-//   <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-//     <div className="navbar-nav">
-//       <p className="nav-item nav-link active">Home</p>
-//       <p className="nav-item nav-link">Pages</p>
-//       <p className="nav-item nav-link">Services</p>
-//       <p className="nav-item nav-link">Career</p>
-//       <p className="nav-item nav-link">ContactUs</p>
-//       {/* <a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
-//       <a className="nav-item nav-link" href="#">Pages</a>
-//       <a className="nav-item nav-link" href="#">Services</a>
-//       <a className="nav-item nav-link disabled" href="#">Career</a>
-//       <a className="nav-item nav-link disabled" href="#">ContactUs</a> */}
-//     </div>
-//   </div>
-// </nav>
-// </>
-//   )
-// }
-
-// export default Navbar
-
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -42,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import logo from '../Assets/newlogo.png';
+import logo from '../Assets/ATS-3-11-TRSS.png';
 import './NavBar.css';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/system';
@@ -63,7 +32,7 @@ function ResponsiveAppBar({name ,role}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const theme = useTheme();
-  const isScreenSize889pxOrMore = useMediaQuery(theme.breakpoints.up('sm'));
+  const isScreenSize600pxOrMore = useMediaQuery(theme.breakpoints.up('sm'));
   const [selectedPage, setSelectedPage] = React.useState(name);
   const messageButtonRef = React.useRef(null);
   const homeButtonRef = React.useRef(null);
@@ -117,17 +86,15 @@ function ResponsiveAppBar({name ,role}) {
   };
 
   return (
-    <AppBar position="static" sx={{ background: 'rgb(19, 27, 38,1)', height: '13vh',width:"100%", alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
+    <AppBar position="static" sx={{ background: 'linear-gradient(82deg, rgba(252,252,252,1) 0%, rgba(11,22,11,1) 57%)', height: '80px',width:"100%", alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
     {/* // <AppBar position="static" sx={{ background: 'rgb(148, 151, 150,30.9)', height: '13vh',width:"100%", alignItems: 'center', display: 'flex', justifyContent: 'center' }}> */}
       <Container maxWidth="xl" sx={{ margin: 0 }}>
         <Toolbar disableGutters sx={{ justifyContent: 'center', padding: 0 }}>
-          {isScreenSize889pxOrMore && (
             <Box className="logo" sx={{ display: 'flex', alignItems: 'center', width: '15em', height: '100%' }}>
-              <img src={logo} alt="Logo" style={{ width: '100%', height: '100%' }} />
+              <img src={logo} alt="Logo" style={{ width: isScreenSize600pxOrMore ? '100%':"50%",marginLeft:isScreenSize600pxOrMore ?"":"-3rem", height: '100%' }} />
             </Box>
-          )}
           <Box sx={{ display: { xs: 'flex', md: 'none', alignItems: 'center' } }}>
-            <IconButton
+            <IconButton style={{marginRight:"-16rem",color:"white"}}
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -141,7 +108,7 @@ function ResponsiveAppBar({name ,role}) {
             >
               <MenuIcon />
             </IconButton>
-            <Menu
+            <Menu 
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -176,25 +143,26 @@ function ResponsiveAppBar({name ,role}) {
                 // ref={page === 'Message' ? messageButtonRef : page === 'Home' ? homeButtonRef : contactButtonRef}
                 onClick={() => handleNavigate("Home")}
                 sx={{
-                  my: 1, mx: 1, color: 'white', fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
+                  my: 1, mx: 1, color: selectedPage ==="Home" ? '#0ac775' :"white", fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
                   transition: 'border-bottom 0.3s',
                   height:"1.8rem",
-                  borderBottom: selectedPage ==="Home" ? '3px solid orange' : 'none',
+                  borderBottom: selectedPage ==="Home" ? '3px solid #0ac775' : 'none',
                   '&:hover': {
                     textDecoration: 'none',
-                    backgroundColor:"white",
-                    borderTopRightRadius:"25px",
-                    borderBottomLeftRadius:"25px",
-                    color:"rgb(19, 27, 38)"
+                    color:"#0ac775",
+                    // backgroundColor:"white",
+                    // borderTopRightRadius:"25px",
+                    // borderBottomLeftRadius:"25px",
                   },
                   '&:focus': {
                     // textDecoration: 'none',
-                    borderTopRightRadius:"20px",
-                    borderBottomLeftRadius:"20px",
+                    // borderTopRightRadius:"20px",
+                    // borderBottomLeftRadius:"20px",
                     border:"0.1 solid rgb(19, 27, 38)",
                     color:"green",
                     border:"none",
-                    backgroundColor:"white",
+                    outline: "none",
+
 
                   },
                 }}
@@ -207,25 +175,26 @@ function ResponsiveAppBar({name ,role}) {
                 // ref={page === 'Message' ? messageButtonRef : page === 'Home' ? homeButtonRef : contactButtonRef}
                 onClick={() => handleNavigate("About")}
                 sx={{
-                  my: 1, mx: 1, color: 'white', fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
+                  my: 1, mx: 1, color:selectedPage ==="About" ? '#0ac775' :"white", fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
                   transition: 'border-bottom 0.3s',
                   height:"1.8rem",
-                  borderBottom: selectedPage === "About" ? '3px solid orange' : 'none',
+                  borderBottom: selectedPage === "About" ? '3px solid #0ac775' : 'none',
                   '&:hover': {
                     textDecoration: 'none',
-                    backgroundColor:"white",
-                    borderTopRightRadius:"25px",
-                    borderBottomLeftRadius:"25px",
-                    color:"rgb(19, 27, 38)"
+                    color:"#0ac775",
+                    // backgroundColor:"white",
+                    // borderTopRightRadius:"25px",
+                    // borderBottomLeftRadius:"25px",
                   },
                   '&:focus': {
                     // textDecoration: 'none',
-                    borderTopRightRadius:"20px",
-                    borderBottomLeftRadius:"20px",
+                     // borderTopRightRadius:"20px",
+                    // borderBottomLeftRadius:"20px",
                     border:"0.1 solid rgb(19, 27, 38)",
                     color:"green",
                     border:"none",
-                    backgroundColor:"white",
+                    outline: "none",
+
 
                   },
                 }}
@@ -233,30 +202,64 @@ function ResponsiveAppBar({name ,role}) {
                 About
                 {/* {page} */}
               </Button>   
+       
           <Button
+                // key={page}
+                // ref={page === 'Message' ? messageButtonRef : page === 'Home' ? homeButtonRef : contactButtonRef}
+                onClick={() => handleNavigate("Services")}
+                sx={{
+                  my: 1, mx: 1, color: selectedPage ==="Services" ? '#0ac775' :"white", fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
+                  transition: 'border-bottom 0.3s',
+                  height:"1.8rem",
+                  borderBottom: selectedPage ==="Services" ? '3px solid #0ac775' : 'none',
+                  '&:hover': {
+                    textDecoration: 'none',
+                    color:"#0ac775",
+                    // backgroundColor:"white",
+                    // borderTopRightRadius:"25px",
+                    // borderBottomLeftRadius:"25px",
+                  },
+                  '&:focus': {
+                    // textDecoration: 'none',
+                     // borderTopRightRadius:"20px",
+                    // borderBottomLeftRadius:"20px",
+                    border:"0.1 solid rgb(19, 27, 38)",
+                    color:"green",
+                    border:"none",
+                    outline: "none",
+
+
+                  },
+                }}
+              >
+                Services
+                {/* {page} */}
+              </Button>
+              <Button
                 // key={page}
                 // ref={page === 'Message' ? messageButtonRef : page === 'Home' ? homeButtonRef : contactButtonRef}
                 onClick={() => handleNavigate("Career")}
                 sx={{
-                  my: 1, mx: 1, color: 'white', fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
+                  my: 1, mx: 1, color: selectedPage ==="Career" ? '#0ac775' :"white", fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
                   transition: 'border-bottom 0.3s',
                   height:"1.8rem",
-                  borderBottom: selectedPage ==="Career" ? '3px solid orange' : 'none',
+                  borderBottom: selectedPage ==="Career" ? '3px solid #0ac775' : 'none',
                   '&:hover': {
                     textDecoration: 'none',
-                    backgroundColor:"white",
-                    borderTopRightRadius:"25px",
-                    borderBottomLeftRadius:"25px",
-                    color:"rgb(19, 27, 38)"
+                    color:"#0ac775",
+                    // backgroundColor:"white",
+                    // borderTopRightRadius:"25px",
+                    // borderBottomLeftRadius:"25px",
                   },
                   '&:focus': {
                     // textDecoration: 'none',
-                    borderTopRightRadius:"20px",
-                    borderBottomLeftRadius:"20px",
+                     // borderTopRightRadius:"20px",
+                    // borderBottomLeftRadius:"20px",
                     border:"0.1 solid rgb(19, 27, 38)",
                     color:"green",
                     border:"none",
-                    backgroundColor:"white",
+                    outline: "none",
+
 
                   },
                 }}
@@ -267,58 +270,29 @@ function ResponsiveAppBar({name ,role}) {
           <Button
                 // key={page}
                 // ref={page === 'Message' ? messageButtonRef : page === 'Home' ? homeButtonRef : contactButtonRef}
-                onClick={() => handleNavigate("Services")}
-                sx={{
-                  my: 1, mx: 1, color: 'white', fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
-                  transition: 'border-bottom 0.3s',
-                  height:"1.8rem",
-                  borderBottom: selectedPage ==="Services" ? '3px solid orange' : 'none',
-                  '&:hover': {
-                    textDecoration: 'none',
-                    backgroundColor:"white",
-                    borderTopRightRadius:"25px",
-                    borderBottomLeftRadius:"25px",
-                    color:"rgb(19, 27, 38)"
-                  },
-                  '&:focus': {
-                    // textDecoration: 'none',
-                    borderTopRightRadius:"20px",
-                    borderBottomLeftRadius:"20px",
-                    border:"0.1 solid rgb(19, 27, 38)",
-                    color:"green",
-                    border:"none",
-                    backgroundColor:"white",
-
-                  },
-                }}
-              >
-                Services
-                {/* {page} */}
-              </Button>
-          <Button
-                // key={page}
-                // ref={page === 'Message' ? messageButtonRef : page === 'Home' ? homeButtonRef : contactButtonRef}
                 onClick={() => handleNavigate("Business Model")}
                 sx={{
-                  my: 1, mx: 1, color: 'white', fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
+                  my: 1, mx: 1, color:selectedPage ==="Business Model" ? '#0ac775' :"white", fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
                   transition: 'border-bottom 0.3s',
                   height:"1.8rem",
-                  borderBottom: selectedPage ==="Business Model" ? '3px solid orange' : 'none',
+                  borderBottom: selectedPage ==="Business Model" ? '3px solid #0ac775' : 'none',
                   '&:hover': {
                     textDecoration: 'none',
-                    backgroundColor:"white",
-                    borderTopRightRadius:"25px",
-                    borderBottomLeftRadius:"25px",
-                    color:"rgb(19, 27, 38)"
+                    color:"#0ac775",
+                    // backgroundColor:"white",
+                    // borderTopRightRadius:"25px",
+                    // borderBottomLeftRadius:"25px",
                   },
                   '&:focus': {
                     // textDecoration: 'none',
-                    borderTopRightRadius:"20px",
-                    borderBottomLeftRadius:"20px",
+                    // borderTopRightRadius:"20px",
+                    // borderBottomLeftRadius:"20px",
                     border:"0.1 solid rgb(19, 27, 38)",
                     color:"green",
                     border:"none",
-                    backgroundColor:"white",
+                    outline: "none",
+                    outline: "none",
+
 
                   },
                 }}
@@ -331,25 +305,26 @@ function ResponsiveAppBar({name ,role}) {
                 // ref={page === 'Message' ? messageButtonRef : page === 'Home' ? homeButtonRef : contactButtonRef}
                 onClick={() => handleNavigate("Contact Us")}
                 sx={{
-                  my: 1, mx: 1, color: 'white', fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
+                  my: 1, mx: 1, color:selectedPage ==="Contact Us" ? '#0ac775' :"white", fontSize: 'medium', marginRight: "2rem", display: 'flex', fontFamily: "Poppins",
                   transition: 'border-bottom 0.3s',
                   height:"1.8rem",
-                  borderBottom: selectedPage ==="Contact Us" ? '3px solid orange' : 'none',
+                  borderBottom: selectedPage ==="Contact Us" ? '3px solid #0ac775' : 'none',
                   '&:hover': {
                     textDecoration: 'none',
-                    backgroundColor:"white",
-                    borderTopRightRadius:"25px",
-                    borderBottomLeftRadius:"25px",
-                    color:"rgb(19, 27, 38)"
+                    color:"#0ac775",
+                    // backgroundColor:"white",
+                    // borderTopRightRadius:"25px",
+                    // borderBottomLeftRadius:"25px",
                   },
                   '&:focus': {
                     // textDecoration: 'none',
-                    borderTopRightRadius:"20px",
-                    borderBottomLeftRadius:"20px",
+                    // borderTopRightRadius:"20px",
+                    // borderBottomLeftRadius:"20px",
                     border:"0.1 solid rgb(19, 27, 38)",
                     color:"green",
                     border:"none",
-                    backgroundColor:"white",
+                    outline: "none",
+
 
                   },
                 }}
@@ -357,71 +332,9 @@ function ResponsiveAppBar({name ,role}) {
                 Contact Us
                 {/* {page} */}
               </Button>
-            {/* {pages.map((page) => (
-              <Button
-                key={page}
-                ref={page === 'Message' ? messageButtonRef : page === 'Home' ? homeButtonRef : contactButtonRef}
-                onClick={() => handleNavigate(page)}
-                sx={{
-                  my: 1, mx: 1, color: 'white', fontSize: 'medium', marginRight: "4.7rem", display: 'flex', fontFamily: "Poppins",
-                  transition: 'border-bottom 0.3s',
-                  height:"1.8rem",
-                  borderBottom: selectedPage === page ? '3px solid orange' : 'none',
-                  '&:hover': {
-                    textDecoration: 'none',
-                    backgroundColor:"white",
-                    borderTopRightRadius:"25px",
-                    borderBottomLeftRadius:"25px",
-                    color:"rgb(19, 27, 38)"
-                  },
-                  '&:focus': {
-                    // textDecoration: 'none',
-                    borderTopRightRadius:"20px",
-                    borderBottomLeftRadius:"20px",
-                    border:"0.1 solid rgb(19, 27, 38)",
-                    color:"green",
-                    border:"none",
-                    backgroundColor:"white",
-
-                  },
-                }}
-              >
-                {page}
-              </Button>
-            ))} */}
+          
           </Box>
-          {/* <p id='logout_button' onClick={handleOpenUserMenu}>
-            <span style={{ color: "rgb(0, 99, 107)", fontSize: 'medium', display: 'block', fontFamily: "'Poppins', sans-serif", marginRight: "10px" }}>Logout</span>
-          </p> */}
-          {/* <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Profile">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, border: '1px solid black', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}>
-                <Avatar alt="Remy Sharp" src="" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={() => handleSettings(setting)}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
+          
         </Toolbar>
       </Container>
     </AppBar>

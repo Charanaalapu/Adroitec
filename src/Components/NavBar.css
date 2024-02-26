@@ -216,3 +216,9 @@ input {
   cursor: pointer;
 
 }
+.navoptions{
+  color: white;
+}
+.nav-link:hover {
+  color: green !important;
+}

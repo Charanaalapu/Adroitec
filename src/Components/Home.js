@@ -9,7 +9,7 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 const Home = () => {
   return (
     <>
-    <div style={{display:"flex",justifyContent:"center",gap:"6rem",bccccackgroundColor:"rgb(24, 24, 24,0.6)"}}>
+    <div style={{display:"flex",minWidth:"100vh",justifyContent:"center",gap:"6rem",bccccackgroundColor:"rgb(24, 24, 24,0.6)"}}>
       <div className='cards' style={{height:"450px",width:"500px",borderRadius:"10px",backgroundColor:"white",color:"black",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",gap:"1rem",boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
         {/* <div style={{height:"100%",width:"500px"}}> */}
           <img src={mission} width='100%' alt='ji' style={{borderTopLeftRadius:"10px",borderTopRightRadius:"10px"}} />

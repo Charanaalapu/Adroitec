@@ -2,7 +2,7 @@
     opacity: 0;
     color: rgb(56, 247, 60);
     font-family: "Poppins", sans-serif;
-    margin-right: 30rem;
+    /* margin-right: 30rem; */
     margin-bottom: 15rem;
   font-style: normal;
   font-size: 50px;
@@ -70,10 +70,14 @@
   .header-title, .header-subtitle {
     width: 100%;
     text-shadow: 1px 2px 0px rgba(111, 240, 104, 0.921);
-    margin-bottom: 15rem;
-    margin-right: 20rem;
+    /* margin-bottom: 15rem; */
+    margin-top: -27rem;
+    /* margin-right: 30rem; */
+    margin-left: -15rem;
     color: #ffffff;
-    font-size: 50px;
+    font-family: "Trirong", serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-size: 90px;
   }
   
   .header-subtitle {
@@ -141,6 +145,31 @@
   
 .cards.hover{
     background-color: red;
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+  .carousel{
+    margin-top: 0px;
+  }
+  .header-title, .header-subtitle {
+    width: 100%;
+    text-shadow: 1px 2px 0px rgba(111, 240, 104, 0.921);
+    /* margin-bottom: 15rem; */
+    margin-top: -57rem;
+    /* margin-right: 30rem; */
+    margin-left: -15rem;
+    color: #ffffff;
+    font-family: "Trirong", serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-size: 90px;
+  }
+  .carousel-inner{
+    height: 200vh;
+  }
 }
 
   /* particles animation ncss */
