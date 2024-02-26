@@ -1,0 +1,25 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  /* background:linear-gradient(164deg, rgba(252,252,252,1) 0%, rgba(39,215,22,1) 100%); */
+  /* background:linear-gradient(164deg, rgba(252,252,252,1) 0%, rgba(163,255,154,1) 100%); */
+  /* background-image: url('./Assets/bg.jpeg'); */
+  background-repeat: no-repeat;
+  
+color: white;
+  /* color: #233142; */
+}
+
+.App{
+  /* background-image: url('./Assets/mainbackground.svg'); */
+}
+.cont1{
+  padding-bottom: 9rem;
+  background-image: url('./Assets/bg.jpeg');
+color: white;
+
+
+}
+
