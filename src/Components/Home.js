@@ -15,7 +15,7 @@ const Home = () => {
           <img src={mission} width='100%' alt='ji' style={{borderTopLeftRadius:"10px",borderTopRightRadius:"10px"}} />
         {/* </div> */}
         <div style={{height:"100%",width:"500px",padding:"20px"}}>
-          <h3>Our Mission</h3>
+          <h3><span style={{color:"#0ac775"}}>Our </span> Mission</h3>
           <p>Our mission is to become one of the most highly regarded incredible next-generation and VLSI outsourcing services by partnering to drive innovation growth and shared success.</p>
         
           </div>
@@ -25,7 +25,7 @@ const Home = () => {
           <img src={vision} width='100%'height="270px" alt='ji' style={{borderTopLeftRadius:"10px",borderTopRightRadius:"10px"}} />
         {/* </div> */}
       <div style={{height:"100%",width:"500px",padding:"20px",marginTop:"1rem"}}>
-          <h3>Our vision</h3>
+          <h3><span style={{color:"#0ac775"}}>Our </span> vision</h3>
           <p>Our vision is to strive for success for ourselves and for our customers with passion and strive to continually improve the way we do this.</p>
         
           </div>
@@ -33,7 +33,7 @@ const Home = () => {
         </div>
       </div>
       <hr/><br/>
-      <h2 align="center">Our Approach/Culture</h2>
+      <h2 align="center"><span style={{color:"#0ac775"}}>Our </span> Approach/Culture</h2>
 
       <div style={{marginLeft:"6rem",marginRight:"6rem",padding:"3rem"}}>
         <p >
@@ -56,7 +56,7 @@ const Home = () => {
           <img src={values_ethics} width='45%' alt='ji' style={{borderRadius:"10px" }} />
         {/* </div> */}
         <div style={{height:"75%",borderRadius:"10px",width:"500px",padding:"20px",backgroundColor:"white",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
-          <h3 style={{alignSelf:"flex-start"}}>Our Values & Ethics :</h3>
+          <h3 style={{alignSelf:"flex-start"}}><span style={{color:"#0ac775"}}>Our </span> Values & Ethics :</h3>
           <p>We strive to be a company that is mindful of how our actions impact the world. We want to be good people and do good work.</p>
         <p>We believe in being honest with ourselves and others. We try to operate with transparency, authenticity, and humility</p>
          <p>We work hard for our clients, but we also take care of ourselves. We don't work long hours just for the sake of it - if we need a break, we take it. And if someone needs help or support, we're there for them</p> </div>
@@ -104,7 +104,7 @@ const Home = () => {
 
 
       <div style={{margin:"3rem"}}>
-      <h1 align="center">Overview</h1><hr/>
+      <h1 align="center" style={{color:"#0ac775"}}>Overview</h1><hr/>
       <p>
         Semiconductors are necessary to power devices in a wide range of industries, from consumer electronics to automotive. The semiconductor market has been rapidly changing over the last few decades, and the industry is now in a state of rapid growth. To support this growth, we provide semiconductor services that ensure your business is set up for success in this new environment.
         Adroitec Systems is a leading global semiconductor design services company, helping customers achieve their objectives in cost, time, and quality. We provide end-to-end ASIC design services to customers globally in different domains in Semiconductors, Embedded and Software. Our success can be attributed to our deep domain expertise, critical thinking and problem-solving capabilities, high level of workmanship and a relentless pursuit of excellence.
