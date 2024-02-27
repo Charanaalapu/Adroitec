@@ -25,13 +25,13 @@ function App() {
     // <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Homepage />} exact />
-          <Route path="/home" element={<Homepage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/business_model" element={<BusinessModel />} />
-          <Route path="/contact_us" element={<ContactUs />} />
+          <Route exact path="/Adroitec" element={<Homepage />}  />
+          <Route exact path="/home" element={<Homepage />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/career" element={<Career />} />
+          <Route exact path="/services" element={<Services />} />
+          <Route exact path="/business_model" element={<BusinessModel />} />
+          <Route exact path="/contact_us" element={<ContactUs />} />
         </Routes>
       {/* <Particles id="tsparticles" /> */}
 
