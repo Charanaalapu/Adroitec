@@ -48,7 +48,7 @@ function ResponsiveAppBar({name ,role}) {
     setSelectedPage((prevSelectedPage) => {
       if (prevSelectedPage === page) return page; // No change if already selected
       if (page === 'Home') {
-        navigate('/home');
+        navigate('/Adroitec');
       } else if (page === 'About') {
         navigate('/about');
       } else if (page === 'About') {
