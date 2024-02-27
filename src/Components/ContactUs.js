@@ -5,9 +5,10 @@ const ContactUs = () => {
   return (
     <>
     <Navbar name='Contact Us' />
+    <br/><br/><br/><br/>
     <>
     <div style={{height:"100vh",padding:"1rem",backgroundColor:"white",color:"black",backsground:"linear-gradient(180deg, rgba(124,218,106,1) 0%, rgba(66,122,38,1) 95%)"}}>
-    <h3 style={{color:""}}>Contact us</h3><br/>
+    <h5 style={{color:"#0ac775"}}>//contact us</h5><br/>
     <h4>Drop Us A Line</h4>
     <p>Let's do great work together. Get the right service, determine what you need and contact us for the most suitable Semiconductor services.</p>
     <p>Visit Us ! <br/>

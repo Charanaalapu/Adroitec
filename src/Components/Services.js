@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 const Services = () => {
   return (
     <>
-    <Navbar name='Services' />
+    <Navbar name='Services' /><br/><br/><br/><br/>
     <div style={{height:"100%",padding:"1rem",backgroundColor:"white",color:"black",backgrxound:"linear-gradient(180deg, rgba(124,218,106,1) 0%, rgba(66,122,38,1) 95%)"}}>
     <h1 style={{color:""}}>Services</h1><br/>
     <div style={{display:"flex",flexDirection:"column",gap:"1rem"}}>

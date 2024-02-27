@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 const About = () => {
   return (
     <>
-    <Navbar name='About'/>
+    <Navbar name='About'/><br/><br/>
     <div style={{height:"100vh",padding:"1rem",backgroundColor:"white",color:"black",backgrousnd:"linear-gradient(180deg, rgba(124,218,106,1) 0%, rgba(66,122,38,1) 95%)"}}>
     <h1><span style={{color:"#0ac775"}}>About </span>Us</h1>
     <p>Adroitec Systems is a premier provider of technology services, business consulting, and software solutions for small to large-sized businesses. Founded in 2017, Adroitec Systems has enabled companies of all sizes to grow their businesses through our broad range of technology services, business consulting, and software solutions. Our team of experts are committed to providing you with the best customer experience possible. We're proud to have served more clients in over 4 years and earned the trust and respect from.</p>

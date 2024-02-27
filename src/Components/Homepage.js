@@ -13,32 +13,62 @@ const Homepage = () => {
 
   return (
     <>
-     <div style={{ position: "" }} id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100" src={img1} alt="First slide" />
-            <div className="carousel-caption d-none d-md-block">
+          <div style={{ position: "relative" }}>
+    <img className="d-block w-100" src={img1} alt="first slide" />
+    <div className="white-overlay"></div>
+  </div>
+            <div className="carousel-caption  d-md-block">
               {/* <p className='animated-text'  style={{marginTop:"-20rem",marginLeft:"-35rem"}}>Incite the spark of innovation</p> */}
-              <h1 class="header-title animate-pop-in"  >"INCITE THE SPARK OF INNOVATION"</h1>
+              <h1 class="animate-charcter"  >"INCITE THE SPARK OF INNOVATION"</h1>
+              <br/>
+  <button class="learn-more">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">Learn More</span>
+  </button>
               {/* <p>Sample paragraph text </p> */}
               {/* <p>...</p> */}
             </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={img2} alt="Second slide" />
-            <div className="carousel-caption d-none d-md-block" >
+          <div style={{ position: "relative" }}>
+    <img className="d-block w-100" src={img2} alt="Second slide" />
+    <div className="white-overlay"></div>
+  </div>
+            <div className="carousel-caption  d-md-block" >
               {/* <p className='animated-text' style={{marginTop:"-20rem",marginLeft:"-35rem"}}>Where the complexity meets the simplicity.</p> */}
-              <h1 class="header-title animate-pop-in" >"WHERE THE COMPLEXITY MEETS THE SIMPLICITY"</h1>
+              <h1 class="animate-charcter" >"WHERE THE COMPLEXITY MEETS THE SIMPLICITY"</h1>
+              <br/>
+  <button class="learn-more">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">Learn More</span>
+  </button>
               {/* <p>Sample paragraph text </p> */}
               {/* <p>...</p> */}
             </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={img3} alt="Third slide" />
-            <div className="carousel-caption d-none d-md-block">
+          <div style={{ position: "relative" }}>
+    <img className="d-block w-100" src={img3} alt="third slide" />
+    <div className="white-overlay"></div>
+  </div>
+            <div className="carousel-caption d-md-block">
               {/* <p className='animated-text'  style={{marginTop:"-20rem",marginLeft:"-35rem"}}>Quality with a cost-effective price</p> */}
               
-              <h1 class="header-title animate-pop-in"  >"QUALITY WITH A COST-EFFECTIVE PRICE"</h1>
+              <h1 class="animate-charcter"  >"QUALITY WITH A COST-EFFECTIVE PRICE"</h1>
+              <br/>
+  <button class="learn-more">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">Learn More</span>
+  </button>
               {/* <p>Sample paragraph text </p> */}
               {/* <h1 className='animated-text'  ><span className='cc'> 03 | </span>QUALITY WITH A COST-EFFECTIVE PRICE</h1> */}
               {/* <p>...</p> */}

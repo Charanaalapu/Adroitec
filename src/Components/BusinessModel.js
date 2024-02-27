@@ -4,8 +4,9 @@ import Navbar from './Navbar'
 const BusinessModel = () => {
   return (
     <>
-    <Navbar name='Business Model'/>
-    <div>BusinessModel</div>
+    <Navbar name='Business Model'/><br/><br/><br/><br/>
+    <div>In Development Stage</div>
+
 
     </>
   )

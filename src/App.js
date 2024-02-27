@@ -49,7 +49,7 @@ function App() {
 
          
         </Routes>
-      <Particles id="tsparticles" />
+      {/* <Particles id="tsparticles" /> */}
 
         <Footer />
       </div>

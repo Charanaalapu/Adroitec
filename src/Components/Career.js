@@ -5,7 +5,8 @@ const Career = () => {
   return (
     <>
     <Navbar name='Career' />
-    <div>Career</div>
+    <br/><br/><br/><br/>
+    <div>In Development Stage</div>
 
     </>
   )

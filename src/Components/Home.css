@@ -1,0 +1,195 @@
+.topcontainer1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left,
+.right {
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.cont3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.cont3-left {
+    width: 500px;
+    padding-left: 1rem;
+}
+
+.cont3-right {
+    width: 500px;
+    padding-left: 1rem;
+
+}
+.matter{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #221f3c;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards_mater{
+    display: flex;
+    gap: 2rem;
+
+}
+.cm{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding: 1rem;
+    /* justify-content: center; */
+    align-items: flex-start;
+    color: #d2d1dd;
+    background-color: #2b274b;
+    transition: background-color 0.8s ease;
+}
+.cm:hover{
+    background-color: white;
+    color: rgb(4, 9, 43);
+}
+.solutions {
+    padding-left: 5rem;
+}
+
+.cards1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    /* z-index: 10000; */
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 350px;
+    padding: 20px;
+    transition: box-shadow 0.6s ease;
+}
+
+.cards:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+@media screen and (max-width:770px) {
+    .topcontainer1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+    }
+
+    .left,
+    .right {
+        width:80%;
+        font-size: small;
+        /* background-color: grey; */
+
+    }
+
+    .cont3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* gap: 3rem; */
+    }
+
+    .cont3-left {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont3-right {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .matter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 1rem;
+    }
+    .cm{
+        height: 400px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding: 1rem;
+        /* justify-content: center; */
+        align-items: flex-start;
+        color: #a29ecf;
+        background-color: #2b274b;
+        transition: background-color 0.8s ease;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 150px;
+        padding: 20px;
+        transition: box-shadow 0.6s ease;
+    }
+    .cards_mater{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    
+    }
+    .solutions {
+        padding-left: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .cards1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+        /* z-index: 10000; */
+    
+    }
+    
+    .cards {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        height: 250px;
+        width: 300px;
+        transition: box-shadow 0.6s ease;
+    }
+}
