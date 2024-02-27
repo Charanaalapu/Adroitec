@@ -27,11 +27,11 @@ function App() {
         <Routes>
           <Route exact path="/Adroitec" element={<Homepage />}  />
           {/* <Route exact path="/home" element={<Homepage />} /> */}
-          <Route exact path="/Adroitec/about" element={<About />} />
-          <Route exact path="/Adroitec/career" element={<Career />} />
-          <Route exact path="/Adroitec/services" element={<Services />} />
-          <Route exact path="/Adroitec/business_model" element={<BusinessModel />} />
-          <Route exact path="/Adroitec/contact_us" element={<ContactUs />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/career" element={<Career />} />
+          <Route exact path="/services" element={<Services />} />
+          <Route exact path="/business_model" element={<BusinessModel />} />
+          <Route exact path="/contact_us" element={<ContactUs />} />
         </Routes>
       {/* <Particles id="tsparticles" /> */}
 

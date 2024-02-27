@@ -111,11 +111,11 @@ function ResponsiveAppBar({name ,role}) {
       <div className={isActive ? 'navbar-links active' : 'navbar-links'}>
         <ul>
           <li><a href="Adroitec" className="a">Home<span className="line"></span></a></li>
-          <li><a href="/Adroitec/about" className="a">About us<span className="line"></span></a></li>
-          <li><a href="/Adroitec/services" className="a">Services<span className="line"></span></a></li>
-          <li><a href="/Adroitec/business_model" className="a">Business Model<span className="line"></span></a></li>
-          <li><a href="/Adroitec/career" className="a">Career<span className="line"></span></a></li>
-          <li><a href="/Adroitec/contact_us" className="a">Contact us<span className="line"></span></a></li>
+          <li><a href="about" className="a">About us<span className="line"></span></a></li>
+          <li><a href="services" className="a">Services<span className="line"></span></a></li>
+          <li><a href="business_model" className="a">Business Model<span className="line"></span></a></li>
+          <li><a href="career" className="a">Career<span className="line"></span></a></li>
+          <li><a href="contact_us" className="a">Contact us<span className="line"></span></a></li>
           <li className='hide'><a href="" className="a"><GridViewIcon style={{marginTop:"5px"}}/></a></li>
         </ul>
       </div>
