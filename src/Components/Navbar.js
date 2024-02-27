@@ -110,7 +110,7 @@ function ResponsiveAppBar({name ,role}) {
       </a>
       <div className={isActive ? 'navbar-links active' : 'navbar-links'}>
         <ul>
-          <li><a href="home" className="a">Home<span className="line"></span></a></li>
+          <li><a href="Adroitec" className="a">Home<span className="line"></span></a></li>
           <li><a href="about" className="a">About us<span className="line"></span></a></li>
           <li><a href="services" className="a">Services<span className="line"></span></a></li>
           <li><a href="business_model" className="a">Business Model<span className="line"></span></a></li>
