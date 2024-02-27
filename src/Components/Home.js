@@ -126,6 +126,18 @@ const Home = () => {
         </div>
 
       </div>
+      <div className='overview'>
+      <h3 align='center'><u><span style={{color:"#0ac775",}}>Overview </span></u></h3>
+      <div>    
+        <p>Semiconductors are necessary to power devices in a wide range of industries, from consumer electronics to automotive. The semiconductor market has been rapidly changing over the last few decades, and the industry is now in a state of rapid growth. To support this growth, we provide semiconductor services that ensure your business is set up for success in this new environment.</p>
+        <p>Adroitec Systems is a leading global semiconductor design services company, helping customers achieve their objectives in cost, time, and quality. We provide end-to-end ASIC design services to customers globally in different domains in Semiconductors, Embedded and Software. Our success can be attributed to our deep domain expertise, critical thinking and problem-solving capabilities, high level of workmanship and a relentless pursuit of excellence.</p>
+        <p>Adroitec is a technology company that provides its clients with tools to integrate their physical and digital worlds. We develop comprehensive technology solutions that enable our clients to manage both the online and offline customer experience more effectively.</p>
+        <p>We are a creative design agency that has helped design, develop, and market multiple products for companies in different industries. Producing high-quality work is our priority, and we design our products with reliability, efficiency, and usability in mind. Our goal is to build a team of talented individuals who share our passion for excellence.</p>
+        <p>We offer our clients a partner which is large enough to be scalable but small enough to be flexible to meet client’s project needs and business demands. We aim to become our client’s service partner of choice. We build our relationships on quality, performance, and trust. We believe in our in-depth knowledge, resource pool and delivery capabilities. </p>
+        <p>We are an experienced team of engineers and developers that specializes in electronics design and automation, platform design, embedded technologies, data acquisition systems, programmable logic controllers (PLC), industrial automation systems, control systems programming, machine vision systems, networked industrial environments (including SCADA), and more. Our services include engineering projects ranging from one-off designs to turnkey system integration.</p>
+      </div>
+      </div>
+
       
     </>
   )
