@@ -11,7 +11,6 @@ function App() {
   return (
     <>
     <HashRouter>
-    <div className="App">
       <Routes>
         <Route path="/" Component={<Homepage />} />
         <Route path="/home" Component={<Homepage />} />
@@ -21,10 +20,8 @@ function App() {
         <Route path="/business_model" Component={<BusinessModel />} />
         <Route path="/contact_us" Component={<ContactUs />} />
       </Routes>
-
-      <Footer />
-    </div>
     </HashRouter>
+    <Footer />
 
     </>
   );
