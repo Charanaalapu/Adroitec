@@ -25,29 +25,13 @@ function App() {
     // <Router>
       <div className="App">
         <Routes>
-          {/* <Route path="/" element={<Signin />} /> */}
-          {/* <header className="App-header">
-        <Homepage />
-        
-      </header> */}
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} exact />
           <Route path="/home" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/career" element={<Career />} />
           <Route path="/services" element={<Services />} />
           <Route path="/business_model" element={<BusinessModel />} />
           <Route path="/contact_us" element={<ContactUs />} />
-          {/* <Route path="/dashboard" element={<Homepage />} />
-          <Route path="/reportpage" element={<Reportpage />} />
-          <Route path="/forgot_pwd" element={<Reset_pass />} />
-          <Route path="/resetpass" element={<Confirm_password />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/reset_instructions" element={<Reset_instructions />} />
-          <Route path="/detailed_report" element={<Deatiled_report />} />
-          <Route path="/tiles" element={<Tiles />} /> */}
-
-
-         
         </Routes>
       {/* <Particles id="tsparticles" /> */}
 
