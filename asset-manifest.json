@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.f1cc1230.css",
-    "main.js": "/static/js/main.7f61aa91.js",
-    "static/js/498.6d2eae5a.chunk.js": "/static/js/498.6d2eae5a.chunk.js",
-    "static/js/703.b9dbcbdf.chunk.js": "/static/js/703.b9dbcbdf.chunk.js",
-    "static/js/379.db94dca9.chunk.js": "/static/js/379.db94dca9.chunk.js",
-    "static/media/innovation1.png": "/static/media/innovation1.b3a3019c256cd97e10b7.png",
-    "static/media/q.png": "/static/media/q.a25d76044f49db12b4d3.png",
-    "static/media/cs.png": "/static/media/cs.5c3872de9d68028e9ef5.png",
-    "static/media/bg.jpeg": "/static/media/bg.8aa389ae661e5862e09e.jpeg",
-    "static/media/ATS-3-11-TRSS.png": "/static/media/ATS-3-11-TRSS.f5761bce867fa430602c.png",
-    "static/media/strategic management.jpeg": "/static/media/strategic management.542ceb363fefcacf32b7.jpeg",
-    "static/media/mission.jpg": "/static/media/mission.76dc308b273121c6974c.jpg",
-    "static/media/vision.jpg": "/static/media/vision.635dc975cac939169266.jpg",
-    "static/media/values&ethics.jpg": "/static/media/values&ethics.9b998e59bc3c0ff0553b.jpg",
-    "index.html": "/index.html",
-    "main.f1cc1230.css.map": "/static/css/main.f1cc1230.css.map",
-    "main.7f61aa91.js.map": "/static/js/main.7f61aa91.js.map",
-    "498.6d2eae5a.chunk.js.map": "/static/js/498.6d2eae5a.chunk.js.map",
-    "703.b9dbcbdf.chunk.js.map": "/static/js/703.b9dbcbdf.chunk.js.map",
-    "379.db94dca9.chunk.js.map": "/static/js/379.db94dca9.chunk.js.map"
+    "main.css": "/Adroitec/static/css/main.31019d70.css",
+    "main.js": "/Adroitec/static/js/main.f2d2ca97.js",
+    "static/js/498.6d2eae5a.chunk.js": "/Adroitec/static/js/498.6d2eae5a.chunk.js",
+    "static/js/703.b9dbcbdf.chunk.js": "/Adroitec/static/js/703.b9dbcbdf.chunk.js",
+    "static/js/379.db94dca9.chunk.js": "/Adroitec/static/js/379.db94dca9.chunk.js",
+    "static/media/innovation1.png": "/Adroitec/static/media/innovation1.b3a3019c256cd97e10b7.png",
+    "static/media/q.png": "/Adroitec/static/media/q.a25d76044f49db12b4d3.png",
+    "static/media/cs.png": "/Adroitec/static/media/cs.5c3872de9d68028e9ef5.png",
+    "static/media/bg.jpeg": "/Adroitec/static/media/bg.8aa389ae661e5862e09e.jpeg",
+    "static/media/ATS-3-11-TRSS.png": "/Adroitec/static/media/ATS-3-11-TRSS.f5761bce867fa430602c.png",
+    "static/media/strategic management.jpeg": "/Adroitec/static/media/strategic management.542ceb363fefcacf32b7.jpeg",
+    "static/media/mission.jpg": "/Adroitec/static/media/mission.76dc308b273121c6974c.jpg",
+    "static/media/vision.jpg": "/Adroitec/static/media/vision.635dc975cac939169266.jpg",
+    "static/media/values&ethics.jpg": "/Adroitec/static/media/values&ethics.9b998e59bc3c0ff0553b.jpg",
+    "index.html": "/Adroitec/index.html",
+    "main.31019d70.css.map": "/Adroitec/static/css/main.31019d70.css.map",
+    "main.f2d2ca97.js.map": "/Adroitec/static/js/main.f2d2ca97.js.map",
+    "498.6d2eae5a.chunk.js.map": "/Adroitec/static/js/498.6d2eae5a.chunk.js.map",
+    "703.b9dbcbdf.chunk.js.map": "/Adroitec/static/js/703.b9dbcbdf.chunk.js.map",
+    "379.db94dca9.chunk.js.map": "/Adroitec/static/js/379.db94dca9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1cc1230.css",
-    "static/js/main.7f61aa91.js"
+    "static/css/main.31019d70.css",
+    "static/js/main.f2d2ca97.js"
   ]
 }
