@@ -1,26 +1,25 @@
 import React from 'react'
 import Navbar from './Navbar'
-
+import PhoneInTalkRoundedIcon from '@mui/icons-material/PhoneInTalkRounded';
+import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+import PinDropRoundedIcon from '@mui/icons-material/PinDropRounded';
 const ContactUs = () => {
   return (
     <>
     <Navbar name='Contact Us' />
     <br/><br/><br/><br/>
     <>
-    <div style={{height:"100vh",padding:"1rem",backgroundColor:"white",color:"black",backsground:"linear-gradient(180deg, rgba(124,218,106,1) 0%, rgba(66,122,38,1) 95%)"}}>
+    <div style={{height:"100vh",padding:"1rem",backgroundColor:"",color:"black",backsground:"linear-gradient(180deg, rgba(124,218,106,1) 0%, rgba(66,122,38,1) 95%)"}}>
     <h5 style={{color:"#0ac775"}}>//contact us</h5><br/>
     <h4>Drop Us A Line</h4>
-    <p>Let's do great work together. Get the right service, determine what you need and contact us for the most suitable Semiconductor services.</p>
-    <p>Visit Us ! <br/>
-Eternal Samyuktha, Level-3, Block-A, Madhapur, Hi-Techcity, Hyderabad-500081</p>
-<p>
-Call Us !<br/>
-040-40153259 / +91 7675046544
-</p>
-<p>
-Contact Us ! <br/>
-<a href='mailto:info@eximiustech.com' target="_blank" >info@eximiustech.com</a>
-</p>
+    <div style={{ display: "flex", flexDirection: "column", gap: "1rem", color: "black" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}><PhoneInTalkRoundedIcon /> Phone </div>
+              +91 XXXXXXXXXX
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}><EmailRoundedIcon /> Email</div>
+              info@eximiustech.com
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}><PinDropRoundedIcon /> Location</div>
+              Eternal Samyuktha, Level-3, Block-A, Madhapur, Hi-Techcity, Hyderabad-500081
+            </div>
     </div>
     </>
     </>

@@ -10,6 +10,15 @@ import StraightIcon from '@mui/icons-material/Straight';
 import Home from './Home';
 
 const Homepage = () => {
+  const [scrollDistance, setScrollDistance] = useState(650);
+
+  const handleButtonClick = () => {
+    // Scroll the page
+    window.scrollBy({
+      top: scrollDistance,
+      behavior: 'smooth' // Smooth scrolling effect
+    });
+  };
 
   return (
     <>
@@ -22,9 +31,11 @@ const Homepage = () => {
   </div>
             <div className="carousel-caption  d-md-block">
               {/* <p className='animated-text'  style={{marginTop:"-20rem",marginLeft:"-35rem"}}>Incite the spark of innovation</p> */}
-              <h1 class="animate-charcter"  >"INCITE THE SPARK OF INNOVATION"</h1>
+             <div  class="animate-charcter"> <h1 style={{fontSize:"60px"}}>"INCITE THE SPARK OF INNOVATION"</h1>
+              <p className='paras_aniamtaion' style={{color:"white",fontSize:"18px"}}>"Innovation comes from creating environments where their ideas can connect"</p>
+              </div>
               <br/>
-  <button class="learn-more">
+  <button class="learn-more" onClick={handleButtonClick}>
     <span class="circle" aria-hidden="true">
       <span class="icon arrow"></span>
     </span>
@@ -41,9 +52,11 @@ const Homepage = () => {
   </div>
             <div className="carousel-caption  d-md-block" >
               {/* <p className='animated-text' style={{marginTop:"-20rem",marginLeft:"-35rem"}}>Where the complexity meets the simplicity.</p> */}
-              <h1 class="animate-charcter" >"WHERE THE COMPLEXITY MEETS THE SIMPLICITY"</h1>
+              <div  class="animate-charcter"><h1 style={{fontSize:"60px"}}>"WHERE THE COMPLEXITY MEETS THE SIMPLICITY"</h1>
+              <p className='paras_aniamtaion' style={{color:"white",fontSize:"18px"}}>"Where innovation thrives in the nexus of complexity and simplicity"</p>
+              </div>
               <br/>
-  <button class="learn-more">
+  <button class="learn-more" onClick={handleButtonClick}>
     <span class="circle" aria-hidden="true">
       <span class="icon arrow"></span>
     </span>
@@ -61,9 +74,13 @@ const Homepage = () => {
             <div className="carousel-caption d-md-block">
               {/* <p className='animated-text'  style={{marginTop:"-20rem",marginLeft:"-35rem"}}>Quality with a cost-effective price</p> */}
               
-              <h1 class="animate-charcter"  >"QUALITY WITH A COST-EFFECTIVE PRICE"</h1>
+              <div  class="animate-charcter"> <h1 style={{fontSize:"60px"}}>"QUALITY WITH A COST-EFFECTIVE PRICE"</h1>
+              <p className='paras_aniamtaion' style={{color:"white",fontSize:"18px"}}>"Driving Success Through the Perfect Alignment:
+
+People, Processes, and Technology."</p>
+              </div>
               <br/>
-  <button class="learn-more">
+  <button class="learn-more" onClick={handleButtonClick}>
     <span class="circle" aria-hidden="true">
       <span class="icon arrow"></span>
     </span>
@@ -93,6 +110,7 @@ const Homepage = () => {
         
         
       </div><br/>
+      
       <div style={{width:""}}>
       <Home />
 

@@ -116,7 +116,7 @@ function ResponsiveAppBar({name ,role}) {
           <li><a href="business_model" className="a">Business Model<span className="line"></span></a></li>
           <li><a href="career" className="a">Career<span className="line"></span></a></li>
           <li><a href="contact_us" className="a">Contact us<span className="line"></span></a></li>
-          <li className='hide'><a href="" className="a"><GridViewIcon style={{marginTop:"5px"}}/></a></li>
+          {/* <li className='hide'><a href="" className="a"><GridViewIcon style={{marginTop:"5px"}}/></a></li> */}
         </ul>
       </div>
     </nav>

@@ -1,3 +1,4 @@
+
 *{
   margin:0;
   box-sizing: border-box;
@@ -7,13 +8,16 @@ body{
   /* background:linear-gradient(164deg, rgba(252,252,252,1) 0%, rgba(163,255,154,1) 100%); */
   /* background-image: url('./Assets/bg.jpeg'); */
   background-repeat: no-repeat;
-  
 /* color: white; */
-  /* color: #233142; */
 }
 
 .App{
-  /* background-image: url('./Assets/mainbackground.svg'); */
+  /* background-image: url('./Assets/bg3.jpg'); */
+  /* background-size: contain; */
+  /* background: rgb(8,4,71); */
+  /* background: rgb(3,4,9); */
+/* background: linear-gradient(132deg, rgba(3,4,9,1) 0%, rgba(34,40,92,1) 100%); */
+
 }
 .cont1{
   padding-bottom: 9rem;

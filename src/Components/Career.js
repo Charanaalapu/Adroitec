@@ -6,7 +6,8 @@ const Career = () => {
     <>
     <Navbar name='Career' />
     <br/><br/><br/><br/>
-    <div>In Development Stage</div>
+    <div style={{display:"flex",justifyContent:"center"}}>
+      <h5>In Development Phase</h5></div>
 
     </>
   )

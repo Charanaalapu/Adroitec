@@ -273,11 +273,11 @@ body{
 
 .navbar-links ul li a .line {
   position: absolute;
-  bottom: -40px;
+  bottom: -30px;
   left: 0;
   width: 0;
   height: 2.5px;
-  background-color: #43baff;
+  background-color: #0ac775;
   transition: width 0.3s ease;
 }
 
@@ -550,28 +550,15 @@ hr{
     border-radius: 10px;
 }
 .logo{
-  width: 250px;
+  width: 200px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width:770px){
     .togglebutton {
         display: flex;
+        height: 16px;
+        margin-top: -6px;
         
     }
     .navbar-links{
@@ -581,7 +568,7 @@ hr{
     .navv{
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 0px;
+        padding: 0px;
         width: 100%;
     }
     ul{
@@ -631,6 +618,7 @@ hr{
   }
   .logo{
     width: 130px;
+    padding: 0px;
   }
   .hide{
     display:none;

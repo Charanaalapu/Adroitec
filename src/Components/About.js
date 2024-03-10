@@ -1,15 +1,27 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
 import about from '../Assets/about.jpg'
+import './About.css'
 const About = () => {
+  const [scrollDistance, setScrollDistance] = useState(400);
+
   const [show,setshow]=useState(false)
   const handleshow =()=>{
     setshow(!show)
+
+    setTimeout(() => {
+      window.scrollBy({
+        top: scrollDistance,
+        behavior: 'smooth' // Smooth scrolling effect
+      });
+    }, 500); // 1000 milliseconds delay (adjust as needed)
+    
+
   }
   return (
     <>
     <Navbar name='About'/><br/><br/>
-    <div style={{height:"140%",padding:"1rem",padding:"3rem",backgroundColor:"white",color:"black",backgrousnd:"linear-gradient(180deg, rgba(124,218,106,1) 0%, rgba(66,122,38,1) 95%)"}}>
+    <div style={{height:"140%",padding:"1rem",padding:"3rem",backgroundColor:"",color:"black",backgrousnd:"linear-gradient(180deg, rgba(124,218,106,1) 0%, rgba(66,122,38,1) 95%)"}}>
     <h1 ><span style={{color:"#0ac775"}}>About </span>Us</h1>
     <div style={{display:"flex",gap:"4rem"}}>
     <div style={{width:"600px"}}>
@@ -18,7 +30,8 @@ const About = () => {
     </div>
     <img src={about} alt='about' style={{borderRadius:"20px"}}/>
     </div>
-    <button onClick={handleshow} style={{border:"none",height:"40px",width:"100px",backgroundColor:"#0ac775",color:"white",borderRadius:"20px"}}>Read more</button><br/>
+    <button className='buttonreadmore' onClick={handleshow} style={{border:"none",height:"40px",width:"100px",backgroundColor:show ? "#611866":"#0ac775",color:"white",borderRadius:"20px", transition: "background-color 0.3s ease", // Smooth transition effect
+    cursor: "pointer"}}>Read more</button><br/>
     <div style={{display: show ? "block":"none"}}><br/><br/>
     <h3>Who We Are?</h3>
     <p>We are a team of Technology Professionals who are passionate about designing and delivering solutions that are innovative, progressive, and sustainable. Our goal is to not only create an environment where creativity is nurtured but also where your business faces the future with confidence, clarity, and purpose.</p>

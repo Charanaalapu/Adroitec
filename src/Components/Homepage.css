@@ -25,7 +25,7 @@ button:focus {
 button.learn-more {
   width: 12rem;
   height: auto;
-  margin-top: -15rem;
+  margin-top: -20rem;
   margin-left: -55rem;
 }
 
@@ -112,7 +112,7 @@ button:hover .button-text {
 
 .animate-charcter
 {
-   text-transform: uppercase;
+   /* text-transform: uppercase; */
   background-image: linear-gradient(
     -225deg,
     #0ac775 10%,
@@ -127,7 +127,7 @@ button:hover .button-text {
   background-size: 200% auto;
   color: #0ac775;
   background-clip: text;
-  margin-bottom: 10rem;
+  margin-bottom: 13rem;
   margin-right: 20rem;
   margin-left: -10rem;
   text-shadow: #611866;
@@ -136,7 +136,7 @@ button:hover .button-text {
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
   display: inline-block;
-      font-size: 90px;
+  font-size: 70px;
 }
 
 @keyframes textclip {
@@ -155,6 +155,10 @@ button:hover .button-text {
   height: 100%;
   background-color: rgba(183, 178, 178, 0.089); /* Adjust opacity as needed */
 }
+.animate-charcter p{
+  -webkit-text-fill-color: white;
+
+}
 
 
 
@@ -165,8 +169,23 @@ button:hover .button-text {
   #carouselExampleIndicators{
     margin-top: 3rem;
   }
+  .animate-charcter h1{
+    font-size: 30px !important;
+    margin-left: 1rem;
+  }
+  .animate-charcter p{
+    font-size: 10px !important;
+    margin-left: 1rem;
+    background-image:none !important; 
+    color: white !important;
+  background-clip:none !important;
+  /* -webkit-background-clip:var(--white); */
+  -webkit-text-fill-color: white;
+  /* animation: textclip 2s linear infinite; */
+
+  }
   .animate-charcter{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   background-image: linear-gradient(
     -225deg,
     #227532 49%,
@@ -182,16 +201,18 @@ button:hover .button-text {
   background-size: 100% auto;
   color: #136832;
   background-clip: text;
-  margin-bottom: 0rem;
-  margin-right: 2rem;
-  margin-left: -1rem;
+  margin-bottom: 3rem;
+  margin-right: 0rem;
+  margin-left: -4rem;
   text-shadow: #611866;
   /* text-fill-color: transparent; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-    font-size:12px;
+    /* font-size:x-small !important; */
+    font-size: 5px !important;
+
   }
   @keyframes textclip {
     to {
@@ -203,5 +224,13 @@ button:hover .button-text {
   }
   .h1hide{
     display: block;
+  }
+  .paras_aniamtaion{
+  }
+  .carousel{
+    height: 50vh;
+  }
+  .d-block{
+    height: 400px;
   }
 }
