@@ -42,9 +42,9 @@ const Footer = () => {
             <p >Our Services</p>
             <hr style={{ width: "auto", border: "1px solid grey" }} />
             <div className='links'  style={{ display: "flex", flexDirection: "column", gap: "1.5rem", color: "white" }}>
-              <a href="services" style={{ color: "white" }} onClick={() => handleClick("Semiconductors")}>Semiconductors</a>
-              <a href="services" style={{ color: "white" }} onClick={() => handleClick("Embedded")}>Embedded Design Services</a>
-              <a href="services" style={{ color: "white" }} onClick={() => handleClick("AI")}>AI, ML IOT & Application Development</a>
+              <a href="services" className='footerLinks'  style={{ color: "white" }} onClick={() => handleClick("Semiconductors")}>Semiconductors</a>
+              <a href="services" className='footerLinks' style={{ color: "white" }} onClick={() => handleClick("Embedded")}>Embedded Design Services</a>
+              <a href="services" className='footerLinks' style={{ color: "white" }} onClick={() => handleClick("AI")}>AI, ML IOT & Application Development</a>
             </div>
           </div>
           <div className='logo_foot_div' style={{ width: "300px", backgroundColor: "" }}>
@@ -52,12 +52,12 @@ const Footer = () => {
               <p >Useful Links</p>
               <hr style={{ width: "auto", border: "1px solid grey" }} />
               <div className='links' style={{ display: "flex", flexDirection: "column", gap: "0.5rem", color: "white" }}>
-                <a href="#" style={{ color: "white" }}>About Us</a>
-                <a href="#" style={{ color: "white" }}>Contact Us</a>
-                <a href="#" style={{ color: "white" }}>Business Model</a>
-                <a href="#" style={{ color: "white" }}>Career</a>
-                <a href="#" style={{ color: "white" }}>Privacy Policy</a>
-                <a href="#" style={{ color: "white" }}>Terms & Conditions</a>
+                <a href="about" className='footerLinks' style={{ color: "white" }}>About Us</a>
+                <a href="contact_us" className='footerLinks' style={{ color: "white" }}>Contact Us</a>
+                <a href="business_model" className='footerLinks' style={{ color: "white" }}>Business Model</a>
+                <a href="career" className='footerLinks' style={{ color: "white" }}>Career</a>
+                <a href="#" className='footerLinks' style={{ color: "white" }}>Privacy Policy</a>
+                <a href="#" className='footerLinks' style={{ color: "white" }}>Terms & Conditions</a>
               </div>
             </div>
           </div>
@@ -68,7 +68,8 @@ const Footer = () => {
               <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}><PhoneInTalkRoundedIcon /> Phone </div>
               +91 XXXXXXXXXX
               <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}><EmailRoundedIcon /> Email</div>
-              info@eximiustech.com
+              <a href="info@eximiustech.com" className='footerLinks' style={{ color: "white" }}>info@eximiustech.com</a>
+              {/* info@eximiustech.com */}
               <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}><PinDropRoundedIcon /> Location</div>
               Eternal Samyuktha, Level-3, Block-A, Madhapur, Hi-Techcity, Hyderabad-500081
             </div>

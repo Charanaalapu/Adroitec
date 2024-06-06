@@ -10,7 +10,7 @@ import MemoryIcon from '@mui/icons-material/Memory';
 import ExpandMoreSharpIcon from '@mui/icons-material/ExpandMoreSharp';
 import './Home.css'
 const Home = () => {
-  const [scrollDistance, setScrollDistance] = useState(650);
+  const [scrollDistance, setScrollDistance] = useState(150);
 
   const [show,setshow]=useState(false)
   const handleshow =()=>{
@@ -83,12 +83,8 @@ const Home = () => {
         </div>
 
       </div><br/>
-         <div className='showmore' style={{display: show ? "none":"block",marginLeft:"80rem",marginBottom:"3rem"}}>
-    <button onClick={handleshow} align="right" style={{zIndex:1,border:"none",display:"flex",alignItems:"center",justifyContent:"center",padding:"0.5rem",height:"40px",width:"150px",backgroundColor:"#0ac775",color:"white",borderRadius:"20px"}}>
-      Show more <ExpandMoreSharpIcon /></button><br/>
-      </div>
+         
 
-      <div style={{display: show ? "block":"none",}}>
         <div className='transmission'>
       <div className='matter'>
         <h6 style={{color:"#8e88b8"}}>// DELIVERING INNOVATIVE SOLUTIONS GLOBALLY.</h6>
@@ -113,44 +109,79 @@ const Home = () => {
         </div>
        
         </div>
+        
       </div><br/><br/>
+      <div className='showmore' style={{display: show ? "none":"block",marginLeft:"75rem",marginBottom:"3rem"}}>
+    <button className='showmore_btn bn632-hover bn22' onClick={handleshow} align="right" style={{zIndex:1,border:"none",display:"flex",alignItems:"center",justifyContent:"center",padding:"0.5rem",height:"40px",width:"150px",backgroundColor:"#0ac775",color:"white",borderRadius:"20px"}}>
+      Show more <ExpandMoreSharpIcon /></button><br/>
+      </div>
       
-      <div className='solutions'>
-        <h5 style={{color:"#0ac775",}}>//solutions</h5>
+      <div className='solutions' style={{display: show ? "block":"none",}}>
+        <h5 style={{color:"#0ac775",}}>Services</h5>
         <h1 style={{fontWeight:"700"}}>Performance-optimized, comprehensive & cost-effective <br/>solutions with faster TTM</h1>
         <div className='cards1'>
-          <div className='cards'>
-            <h5 align='center'>RTL design</h5>
-            <p>Our highly qualified Front-End Engineers have been successfully collaborating with architectural teams to take various projects from Spec to Netlist.</p>
+          <div class="square" tabindex="0">
+            <h5 align='center'>ASIC/IP Verification</h5>
+            <p>
+            We have the one of the most grounded group in DV. Our group can execute check without any preparation of complex SoC's and IP's by utilizing most recent approaches, for example, SV-UVM, UPF and meeting key KPI, for example, 100% practical and code inclusion. We additionally give silicon demonstrated VIP to most recent IP's and give source code and aftersales backing to our clients.
+
+            </p>
           </div>
-          <div className='cards'>
-            <h5 align='center'>RTL design</h5>
-            <p>Our highly qualified Front-End Engineers have been successfully collaborating with architectural teams to take various projects from Spec to Netlist.</p>
+          <div class="square" tabindex="0">
+            <h5 align='center'>Physical Design and Verification/STA Services</h5>
+            <p>
+            Floor planning, placement optimization <br/>
+Power planning <br/>
+CTS<br/>
+Place and Route<br/>
+Layout verification<br/>
+Synthesis, Timing constraints, Pre-Route STA <br/>
+CTS, PnR, STA, RV <br/>
+Physical Verification and TAPE OUT<br/>
+Expertise technology nodes 5nm, 7nm,16nm, 28nm, 40nm, 65nm<br/>
+              </p>
           </div>
-          <div className='cards'>
-            <h5 align='center'>RTL design</h5>
-            <p>Our highly qualified Front-End Engineers have been successfully collaborating with architectural teams to take various projects from Spec to Netlist.</p>
+          <div class="square" tabindex="0">
+            <h5 align='center'>DFT Services</h5>
+            <p>
+            Scan insertion, ATPG coverage analysis, Transition delay test coverage analysis<br/>
+RTL and gate level simulation of scan and MBIST test vectors<br/>
+SoC, Subsystem, IP level timing analysis<br/>
+Methodology development for timing closure<br/>
+Customized timing check for different IPs, Interfaces<br/>
+              </p>
           </div>
       
           </div>
           <div className='cards1'>
-          <div className='cards'>
-            <h5 align='center'>RTL design</h5>
-            <p>Our highly qualified Front-End Engineers have been successfully collaborating with architectural teams to take various projects from Spec to Netlist.</p>
+          <div class="square" tabindex="0">
+            <h5 align='center'>Analog and Mixed Signal Layout</h5>
+            <p>
+            High speed SerDes and WLAN<br/>
+Power expertise in LDO, Buck, Boost and Charge pumps<br/>
+Sigma Delta ADC, DAC<br/>
+Block level VCO, PLL, LDO, Bandgap design<br/>
+FinFET Memory design<br/>
+Expertise down to 20nm<br/>
+Post layout parasitic extraction<br/>
+              </p>
           </div>
-          <div className='cards'>
-            <h5 align='center'>RTL design</h5>
-            <p>Our highly qualified Front-End Engineers have been successfully collaborating with architectural teams to take various projects from Spec to Netlist.</p>
+          <div class="square" tabindex="0">
+            <h5 align='center'>Embedded Software</h5>
+            <p>
+            The demand for applications and services grows every day. Every day on board there are more and more applications, which means that the need for advanced knowledge about the software becomes irresistible. At Adroitec, we have a dedicated software team built up with extensive experience in offering services in this area, our experts are well trained and well-equipped with skills necessary to deliver excellent programming solutions.
+              </p>
           </div>
-          <div className='cards'>
-            <h5 align='center'>RTL design</h5>
-            <p>Our highly qualified Front-End Engineers have been successfully collaborating with architectural teams to take various projects from Spec to Netlist.</p>
+          <div class="square" tabindex="0" style={{paddingBottom:"20px"}}>
+            <h5 align='center'>Internet of Things (IOT)</h5>
+            <p style={{marginBottom:""}}>
+            With the emergence of the Internet of Things (IoT), there's a new opportunity to embed intelligence into everyday physical objects. At Adroitec, we're building a platform that enables businesses and consumers to seamlessly integrate their physical and digital worlds. Our technology solution has a broad range of applications - from retail environments to industrial automation, healthcare, and more. We offer products that allow companies of all sizes to ensure their physical and digital worlds are fully integrated, accelerating growth and efficiency. Our solutions are tailored to fit customers' specific needs, offering unparalleled support on all platforms.
+              </p>
           </div>
           
 
         </div>
 
-      </div>
       <div className='overview'>
       <h3 align='center'><u><span style={{color:"#0ac775",}}>Overview </span></u></h3>
       <div>    
@@ -163,7 +194,9 @@ const Home = () => {
       </div>
       </div>
       </div>
-      </div>
+      
+</div>
+
 
       
     </>

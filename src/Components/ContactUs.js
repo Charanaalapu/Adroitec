@@ -6,7 +6,7 @@ import PinDropRoundedIcon from '@mui/icons-material/PinDropRounded';
 const ContactUs = () => {
   return (
     <>
-    <Navbar name='Contact Us' />
+    <Navbar name='Contact_Us' />
     <br/><br/><br/><br/>
     <>
     <div style={{height:"100vh",padding:"1rem",backgroundColor:"",color:"black",backsground:"linear-gradient(180deg, rgba(124,218,106,1) 0%, rgba(66,122,38,1) 95%)"}}>

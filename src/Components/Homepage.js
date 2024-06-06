@@ -104,7 +104,8 @@ People, Processes, and Technology."</p>
          
          <div style={{ transform: 'rotate(180deg)',display:"flex",flexDirection:"column",alignItems:"center" }}>  <span style={{transform:"rotate(90deg)"}}>N E X T</span><StraightIcon style={{transform:"rotate(180deg)", height:"100px",backgroundColor:"",fontSize: 40 }}  />  </div> 
         </a>
-        <div style={{ position: "fixed", top: "0", height: "80px", width: "100%", backgroundColor: "transparent", color: "white" }}>
+        <div style={{ position: "fixed", top: "0",zIndex:10, height: "80px", width: "100%", backgroundColor: "transparent", color: "white" }}>
+          
           <Navbar name='Home' />
         </div>
         

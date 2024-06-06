@@ -20,7 +20,7 @@ const BusinessModel = () => {
   }
   return (
     <>
-    <Navbar name='About'/><br/><br/>
+    <Navbar name='BusinessModel'/><br/><br/>
     <div style={{height:"140%",padding:"1rem",padding:"3rem",backgroundColor:"",color:"black",backgrousnd:"linear-gradient(180deg, rgba(124,218,106,1) 0%, rgba(66,122,38,1) 95%)"}}>
     <h3 ><span style={{color:"#0ac775"}}>Turn Key Solutions & ODC </span></h3>
     <div style={{display:"flex",gap:"4rem"}}>

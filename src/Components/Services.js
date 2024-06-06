@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import './Services.css';
-
+import Services1 from './Services1';
+import services_banner from '../Assets/services_banner.jpg'
+import service_1 from '../Assets/services_1.jpg'
 const Services = () => {
   const [showTechnologies, setShowTechnologies] = useState(false);
   const [showEmbeddedDesign, setShowEmbeddedDesign] = useState(false);
@@ -24,19 +26,20 @@ const Services = () => {
 
   return (
     <>
-      <Navbar name='Services' /><br/><br/><br/><br/>
-      <div style={{ height: "100%", padding: "1rem", backgroundColor: "white", color: "black" }}>
-        <h1 style={{ color: "" }}>Services</h1><br/>
+      <Navbar name='Services' /><br/>
+      <img src={services_banner} className='services_img' />
+      <div style={{ height: "100%", padding: "3rem", backgroundColor: "white", color: "black",marginTop:"-8rem" }}>
+        <h1 style={{ color: "white" }}><span style={{color:"#0ac775"}}>Our </span>Services</h1><br/>
         <div style={{ display: "flex" }}>
           <h3
             onClick={() => setShowTechnologies(!showTechnologies)}
-            style={{ cursor: "pointer", color: showTechnologies ? "green" : "black" }}
+            style={{ cursor: "pointer", color: showTechnologies ? "green" : "black",marginTop:"2rem",paddingLeft:"3rem" }}
             className="active"
           >
             Technologies
           </h3>
         </div>
-        <div style={{ marginLeft: "10rem" }}>
+        {/* <div style={{ marginLeft: "10rem" }}>
           <div style={{ display: "flex" }}>
             {showTechnologies && (
               <h3
@@ -98,8 +101,16 @@ const Services = () => {
               )}
             </div>
           </div>
+        </div> */}
+        <div style={{display:"",width:"100%",justifyContent:"",gap:"2rem",paddingLeft:"3rem"}}>
+        <Services1/>
+        {/* <div style={{height:"auto",width:"50%",backgroundColor:""}}> */}
+          {/* <img src={service_1} width='60%'/> */}
+
+        {/* </div> */}
+
+
         </div>
-        <p>We can offer some benefit-driven services, for example, complete Physical design flow, physical verification, DFT Services GDS Generation and Soc Integration. We center around the utilization of the most recent innovation in the conveyance of these services. Our group has mastery in cutting-edge technology hubs including 5nm, 7nm, 10nm, 14nm, 20nm, 22nm, 28nm, 45nm and 65nm, and has a wide scope of space aptitude in territories including High-Speed Processors, AI, 5G Modem, wireless, networking, processors, and connectivity. Adroitec has been able to effectively deliver multi-million gate SoCs in advanced technology hubs. With increased demand in the personal devices market, digital circuit design becomes time-sensitive. Our group completely understands the urgency and time to market in this technology field. <br/>Our team has experience in providing solutions for various sectors like automobile, networking, mobile, IOT, AI, microprocessors, multimedia, and cloud computing. <br/>Our strategic account management and results-based service delivery models are designed for client success.</p>
       </div>
     </>
   );

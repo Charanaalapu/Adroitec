@@ -8,6 +8,10 @@ color: #7b68ee !important;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
+.footerLinks:hover{
+    text-decoration: underline;
+    color: #7b68ee !important;
+}
 @media screen and (max-width:770px){
     .footer{
         display: flex;

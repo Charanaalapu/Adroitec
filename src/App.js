@@ -25,8 +25,8 @@ function App() {
     // <Router>
       <div className="App">
         <Routes>
-          <Route exact path="/Adroitec" element={<Homepage />}  />
-          {/* <Route exact path="/home" element={<Homepage />} /> */}
+          {/* <Route exact path="/Adroitec" element={<Homepage />}  /> */}
+          <Route exact path="/" element={<Homepage />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/career" element={<Career />} />
           <Route exact path="/services" element={<Services />} />
